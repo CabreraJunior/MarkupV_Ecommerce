@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="hamburger-logo-group">
+
+                <img src="logo.svg" alt="logo icon">
+
+                <nav class="menu">
+                    <div class="slide-menu">
+                        <ul>
+                            <li><span>Collections</span></li>
+                            <li><span>Men</span></li>
+                            <li><span>Women</span></li>
+                            <li><span>About</span></li>
+                            <li><span>Contact</span></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="cart-avatar-group">
+                <div class="btnCart">
+                    <img src="icon-cart.svg" alt="cart icon">
+                </div>
+
+                <img class="avatar" src="morty.png" alt="image avatar">
+            </div>
+        </header>
+
+        <div class="content">
+
+            <!-- Lightbox -->
+            <section class="lightbox">
+                <img class="product-hero" src="product.jpg" alt="image product">
+                <div class="thumb-gallery">
+                    <div class="pic active">
+                        <img src="product.jpg" alt="thumb-1">
+                    </div>
+                    <div class="pic">
+                        <img src="product.jpg" alt="thumb-2">
+                    </div>
+                    <div class="pic">
+                        <img src="product.jpg" alt="thumb-3">
+                    </div>
+                    <div class="pic">
+                        <img src="product.jpg" alt="thumb-4">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product -->
+            <section class="product">
+                <div class="company-name">sneaker company</div>
+                <div class="title">Fall Limited Edition Sneakers</div>
+                <div class="description">
+                    These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole, they'll withstand everything 
+                    the weather can offer.
+                </div>
+                <div class="price-wrapper">
+                    <div class="group">
+                        <div class="price">$125.00</div>
+                        <div class="discount">50%</div>
+                    </div>
+                    <div class="old-price">$250.00</div>
+                </div>
+
+                <div class="count-btn-group">
+                    <div class="counter-wrapper">
+                        <img id="btnMinus" src="icon-minus.svg" alt="icon minus">
+                        <div class="counter">0</div>
+                        <img id="btnPlus" src="icon-plus.svg" alt="icon plus">
+                    </div>
+
+                    <div class="btn">
+                        <img src="icon-cart.svg" alt="icon cart">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+</html>
