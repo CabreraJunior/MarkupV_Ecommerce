@@ -16,7 +16,7 @@ header {
   position: relative;
 }
 
-header .hamburger-logo-group {
+header .menu-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,16 +24,7 @@ header .hamburger-logo-group {
   gap: 1.6rem;
 }
 
-header .hamburger-logo-group .hamburger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  cursor: pointer;
-}
-
-header .hamburger-logo-group .menu {
+header .menu-container .menu {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
@@ -43,14 +34,14 @@ header .hamburger-logo-group .menu {
   z-index: 10;
 }
 
-header .hamburger-logo-group .menu .slide-menu {
+header .menu-container .menu .slide-menu {
   background-color: white;
   height: 100%;
   width: 66vw;
   padding: 2.3rem;
 }
 
-header .hamburger-logo-group .menu .slide-menu ul {
+header .menu-container .menu .slide-menu ul {
   margin-top: 5rem;
   font-size: 1.8rem;
   font-weight: 700;
@@ -60,7 +51,7 @@ header .hamburger-logo-group .menu .slide-menu ul {
   list-style: none;
 }
 
-header .cart-avatar-group {
+header .cart-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -68,7 +59,7 @@ header .cart-avatar-group {
   gap: 2.2rem;
 }
 
-header .cart-avatar-group .avatar {
+header .cart-container .avatar {
   width: 2.5rem;
   border: 2px solid transparent;
   padding-bottom: 20px;
@@ -84,11 +75,11 @@ header .cart .msg-empty {
 }
 
 
-.lightbox .product-hero {
+.left-side-container .first-pic {
   width: 100%;
 }
 
-.lightbox .thumb-gallery {
+.left-side-container .gallery-container {
   display: none;
 }
 
@@ -200,31 +191,27 @@ header {
   border-bottom: 1px solid #b6bcc8;
 }
 
-header .hamburger-logo-group {
+header .menu-container {
   gap: 5.4rem;
 }
 
-header .hamburger-logo-group .hamburger {
-  display: none;
-}
-
-header .hamburger-logo-group .menu {
+header .menu-container .menu {
   display: block;
   position: unset;
   height: unset;
   z-index: unset;
 }
 
-header .hamburger-logo-group .menu .slide-menu {
+header .menu-container .menu .slide-menu {
   width: unset;
   padding: 0;
 }
 
-header .hamburger-logo-group .menu .slide-menu img {
+header .menu-container .menu .slide-menu img {
   display: none;
 }
 
-header .hamburger-logo-group .menu .slide-menu ul {
+header .menu-container .menu .slide-menu ul {
   flex-direction: row;
   margin: 0;
   font-size: 1.5rem;
@@ -233,11 +220,11 @@ header .hamburger-logo-group .menu .slide-menu ul {
   gap: 3.4rem;
 }
 
-header .cart-avatar-group {
+header .cart-container {
   gap: 4.5rem;
 }
 
-header .cart-avatar-group .avatar {
+header .cart-container .avatar {
   width: 4.5rem;
 }
 
@@ -249,37 +236,37 @@ header .cart-avatar-group .avatar {
   padding: 9rem 5rem;
 }
 
-.lightbox {
+.left-side-container {
   width: 80%;
 }
 
-.lightbox .product-hero {
+.left-side-container .first-pic {
   border-radius: 1.5rem;
 }
 
-.lightbox .thumb-gallery {
+.left-side-container .gallery-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
 }
 
-.lightbox .thumb-gallery .pic {
+.left-side-container .gallery-container .pic {
   display: flex;
   width: 20%;
   overflow: hidden;
   border-radius: 1rem;
 }
 
-.lightbox .thumb-gallery .pic img {
+.left-side-container .gallery-container .pic img {
   width: 100%;
 }
 
-.lightbox .thumb-gallery .active {
+.left-side-container .gallery-container .active {
   border: 2px solid #a6e6a6;
 }
 
-.lightbox .thumb-gallery .active img {
+.left-side-container .gallery-container .active img {
   opacity: 0.5;
 }
 
